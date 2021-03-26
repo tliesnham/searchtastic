@@ -1,0 +1,33 @@
+{
+	"apple": [
+		"fruit",
+		"groceries"
+	],
+	"chocolate cake": [
+		"baking",
+		"confectionary"
+	],
+	"eggs": [
+		"baking"
+	],
+	"bread": [
+		"baking"
+	],
+	"victoria sponge cake": [
+		"baking",
+		"confectionary"
+	],
+	"oysters": [
+		"crustaceans",
+		"shellfish",
+		"fish"
+	],
+	"shrimp": [
+		"fish",
+		"shellfish",
+		"crustaceans"
+	],
+	"cod": [
+		"fish"
+	]
+}
