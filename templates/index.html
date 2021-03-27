@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Searchtastic</title>
+    </head>
+
+    <body>
+        <form action="/search" method="post" autocomplete="off">
+            <input type="text" id="keyword" name="keyword" class="keyword">
+            <input type="submit">
+        </form>
+        
+        <span class="results"></span>
+        
+        <script>
+            document.addEventListener("keyup", async function () {
+                let keywordLength = document.querySelector(".keyword").value.length
+                if (keywordLength >= 3) {
+                    const form = document.querySelector("form")
+                    const result = await fetch(form.action, {
+                        method: form.method,
+                        body: new URLSearchParams([...(new FormData(form))]),
+                    })
+                  .then((response) => response.json())
+                  .then((json) => json)
+                  .catch((error) => console.log(error))
+        
+                console.log(result)
+                document.querySelector(".results").innerHTML = result
+                }
+            })
+        
+            document.addEventListener("submit", async function (event) {
+                event.preventDefault()
+                const form = event.target
+        
+                const result = await fetch(form.action, {
+                    method: form.method,
+                    body: new URLSearchParams([...(new FormData(form))]),
+                })
+                  .then((response) => response.json())
+                  .then((json) => json)
+                  .catch((error) => console.log(error))
+        
+                console.log(result)
+            })
+        </script>
+    </body>
+</html>
