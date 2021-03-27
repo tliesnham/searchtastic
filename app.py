@@ -1,5 +1,3 @@
-import searchtastic
-
 from searchtastic import Searchtastic
 
 from flask import Flask, render_template, request
