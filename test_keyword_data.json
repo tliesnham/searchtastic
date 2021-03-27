@@ -1,9 +1,27 @@
 {
-	"apples": [
+	"fiat 500": [
+		"hatchback",
+		"red",
+		"manual"
+	],
+	"ford mustang": [
+		"coupe",
+		"white",
+		"automatic"
+	],
+	"green apple": [
 		"fruit",
 		"groceries"
 	],
-	"potatoes": [
+	"red apple": [
+		"fruit",
+		"groceries"
+	],
+	"sweet potato": [
+		"groceries",
+		"vegetable"
+	],
+	"potato": [
 		"groceries",
 		"vegetable"
 	],
@@ -11,27 +29,8 @@
 		"baking",
 		"confectionary"
 	],
-	"eggs": [
-		"baking"
-	],
-	"bread": [
-		"baking"
-	],
 	"victoria sponge cake": [
 		"baking",
 		"confectionary"
-	],
-	"oysters": [
-		"crustaceans",
-		"shellfish",
-		"fish"
-	],
-	"shrimp": [
-		"fish",
-		"shellfish",
-		"crustaceans"
-	],
-	"cod": [
-		"fish"
 	]
 }
